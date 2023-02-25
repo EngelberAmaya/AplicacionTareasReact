@@ -5,15 +5,15 @@ import './counter.css';
 
 const CounterWithCustomHook = () => {
 
-    const { state, increment, decrement, reset } = useCounter();
+    const { counter, increment, decrement, reset } = useCounter();
 
     return (
         <>
-            <h1>Counter with Hook: {state}</h1>
+            <h1>Counter with Hook: {counter}</h1>
             <hr />
-            <button onClick={ () => increment(2)} className='btn'>+1</button>
+            <button onClick={ increment } className='btn'>+1</button>
             <button onClick={ reset } className='btn'>Reset</button>
-            <button onClick={ () => decrement(2)} className='btn'>-1</button>
+            <button onClick={ decrement } className='btn'>-1</button>
         </>
     )
 }
