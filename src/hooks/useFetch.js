@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 const useFetch = (url) => {
 
     const isMounted = useRef(true);
+    //console.log(isMounted)
     const [state, setState] = useState({ data: null, loading: true, error: null});
 
     useEffect(() => {
@@ -19,19 +20,13 @@ const useFetch = (url) => {
 
         fetch(url).then( resp => resp.json())
                 .then( data => {
-
-                    if (isMounted.current) {
                         
-                        setState({
-                            loading: false,
-                            error: null,
-                            data
-                        });
+                    setState({
+                        loading: false,
+                        error: null,
+                        data
+                    });
 
-                    } else {
-                        console.log('setState no se llamó');
-                    }
-                    
                 })
     }, [url]);
 

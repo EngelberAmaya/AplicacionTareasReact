@@ -7,9 +7,9 @@ const MultipleCustomHook = () => {
 
     const { counter, increment } = useCounter(1)
 
-    const { loading, data } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
-    //console.log(state);
-    const { autor, quote } = !!data && data[0];
+    const { loading, data } = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${counter}`);
+    //console.log(loading, data);
+    const { author, quote } = !!data && data[0];
 
     return (
         <div>
@@ -28,7 +28,7 @@ const MultipleCustomHook = () => {
                     (
                         <blockquote className='blockquote text-right'>
                             <p className='mb-0'>{quote}</p>
-                            <footer className='blockquote-footer'>{autor}</footer>
+                            <footer className='blockquote-footer'>{author}</footer>
                         </blockquote>
                     )
             }
