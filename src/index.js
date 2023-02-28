@@ -11,7 +11,8 @@ import ReactDOM from 'react-dom/client';
 //import RealExampleRef from './components/04-useRef/RealExampleRef';
 //import Layout from './components/05-useLayoutEffect/Layout';
 //import Memorize from './components/06-memos/Memorize';
-import MemoHook from './components/06-memos/MemoHook';
+//import MemoHook from './components/06-memos/MemoHook';
+import Padre from './components/07-prueba-memo/Padre';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -19,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <CounterWithCustomHook /> */}
-    <MemoHook />
+    <Padre />
   </React.StrictMode>
 );
 
