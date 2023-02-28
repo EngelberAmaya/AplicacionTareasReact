@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom/client';
 //import FormWithCustomHook from './components/02-useEffect/FormWithCustomHook';
 //import MultipleCustomHook from './components/03-examples/MultipleCustomHook';
 //import FocusScreen from './components/04-useRef/FocusScreen';
-import RealExampleRef from './components/04-useRef/RealExampleRef';
+//import RealExampleRef from './components/04-useRef/RealExampleRef';
+import Layout from './components/05-useLayoutEffect/Layout';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <CounterWithCustomHook /> */}
-    <RealExampleRef />
+    <Layout />
   </React.StrictMode>
 );
 
