@@ -11,7 +11,7 @@ const RealExampleRef = () => {
             <h1>RealExampleRef</h1>
             <hr/>
 
-            { show &&  <MultipleCustomHook/> }
+            { show && <MultipleCustomHook/> }
 
             <button className='btn btn-primary mt-4' onClick={ () => setShow(!show)}>
                 Show/Hide

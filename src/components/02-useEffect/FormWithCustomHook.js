@@ -62,7 +62,7 @@ const FormWithCustomHook = () => {
                 />
             </div>
 
-            <button className='btn brn-primary' type='submit'>Guardar</button>
+            <button className='btn btn-primary' type='submit'>Guardar</button>
 
         </form>
     )
