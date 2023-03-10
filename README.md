@@ -1,3 +1,7 @@
+# GifExpertAppReact
+
+Aplicación de tareas usando useReducer, con el listado , creación, modificación de un estado y eliminación usando localStorage y bootstrap. [Ver](https://aplicacion-tareas-react.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
