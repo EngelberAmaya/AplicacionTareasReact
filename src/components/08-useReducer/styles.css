@@ -13,12 +13,6 @@ p {
     text-decoration: line-through;
 }
 
-.imagen {
-    background-image: url('./img/todo-lists.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
 
 hr {
     border: 1px solid black;
