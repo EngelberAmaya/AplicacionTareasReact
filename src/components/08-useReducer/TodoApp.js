@@ -21,6 +21,16 @@ const TodoApp = () => {
 
     //console.log(description);
 
+    const handleDelete = (todoId) => {
+
+        const action = {
+            type: 'delete',
+            payload: todoId
+        }
+
+        dispatch(action);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -67,7 +77,7 @@ const TodoApp = () => {
                                         key={todo.id} 
                                         className="list-group-item">
                                             <p className='text-center'>{i+1}. {todo.desc}</p>
-                                            <button className='btn btn-danger'>Borrar</button>
+                                            <button onClick={ () => handleDelete(todo.id)} className='btn btn-danger'>Borrar</button>
                                     </li>
                                 ))
                             }
