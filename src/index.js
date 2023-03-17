@@ -14,7 +14,8 @@ import './index.css';
 // import Memorize from './components/06-memos/Memorize';
 // import MemoHook from './components/06-memos/MemoHook';
 //import Padre from './components/07-prueba-memo/Padre';
-import TodoApp from './components/08-useReducer/TodoApp';
+//import TodoApp from './components/08-useReducer/TodoApp';
+import MainApp from './components/09-useContext/MainApp';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -22,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <CounterWithCustomHook /> */}
-    <TodoApp />
+    <MainApp />
   </React.StrictMode>
 );
 
