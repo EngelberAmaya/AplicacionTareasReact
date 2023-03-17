@@ -1,6 +1,10 @@
 import React from 'react'
+import { UserContext } from './UserContext';
 
 const HomeScreen = () => {
+
+    const userContext = React.useContext(UserContext);
+    console.log(userContext);
 
     return (
         <div>
